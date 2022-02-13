@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React from "react";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+} from 'react-router-dom';
+import Bigmenu from './Bigmenu';
+import Recipefilter from './Recipefilter';
+import Prescript from "./Prescript";
 import './App.css';
+import About from "./About";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+function App(){
+    return <Router>
+        <nav>
+            <Link to='/' className="link">Правильное питание</Link>
+            <Link to='/prescript' className="link">Рекомендации</Link>
+            <Link to='/bigmenu' className="link">Меню</Link>
+            <Link to='/recipefilter' className="link">Рецепты</Link>
 
+
+        </nav>
+        <Routes>
+            <Route path='/' element={<About/>}/>
+            <Route path='/prescript' element={<Prescript/>}/>
+            <Route path='/bigmenu' element={<Bigmenu/>}/>
+?            <Route path='/recipefilter' element={<Recipefilter/>}/>
+
+        </Routes>
+    </Router>
+};
 export default App;
