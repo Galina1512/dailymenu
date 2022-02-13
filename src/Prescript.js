@@ -21,9 +21,7 @@ function Prescript(){
             pravilo --;
           if (pravilo <0) {
             pravilo = referens.length -1}
-            // pravilo =2}
-
-            return pravilo
+            return pravilo;
         }))
       }
       
@@ -31,8 +29,6 @@ function Prescript(){
         setPravilo((pravilo=>{
             pravilo ++;
           if (pravilo> referens.length-1){
-            //  if (pravilo> 2){
-
             pravilo = 0;
           }
           return pravilo;

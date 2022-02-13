@@ -93,8 +93,6 @@ hr{
   width: 30px;
   margin: 10px;
   background: black;
-  /* background-color: black; */
-  /* color: black; */
 }
 
 .span{
@@ -135,8 +133,8 @@ flex-direction: column;
 padding: 30px;
 }
 h1{
-  background-color: rgba(255, 255, 255, .3);
-  font-family: 'Source Sans Pro', sans-serif;
+background-color: rgba(255, 255, 255, .3);
+font-family: 'Source Sans Pro', sans-serif;
 font-size: 50px;
 font-weight: bold;
 text-align: center;
@@ -196,7 +194,6 @@ p{
 
 }
 .pic{
-  /* width: 20%; */
   height: 200px;
 display: flex;
 align-items: center;
@@ -209,9 +206,8 @@ margin-left: 10px;
 }
 .rigth{
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   width: 40%;
-  /* height: 180px; */
   background-color: rgba(255, 255, 255, .4);
   padding: 0 20px;
   border-radius: 10px;
@@ -222,9 +218,9 @@ flex-direction: column;
 
 }
 .forabout{
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
- font-weight: bold;
+font-size: 18px;
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
 margin: 15px 0 0;
 }
 .bottom{
@@ -241,10 +237,9 @@ margin: 15px 0 0;
   margin: 0;
 }
 .forefon{
-  background-image: url('fon-green.jpeg');
+background-image: url('fon-green.jpeg');
 background-repeat: no-repeat;
 background-size: cover;
-/* height: 100vh; */
 margin: 0;
 display: flex;
 flex-direction: column;
@@ -254,20 +249,70 @@ align-items: center;
 .upp{
   display: flex;
   justify-content: end;
-  /* align-self: flex-end; */
 }
 .btnup{
 background: none;
 color: white;
 border: none;
 }
-  
 .science{
   background-color: rgba(140, 168, 70, .7);
   padding: 20px;
   border-radius: 10px;
   width: 60%;
-  /* height: 200px; */
   margin-top: 30px;
+}
 
+@media all and (max-width: 900px) {
+  .bloki{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  h1{
+    font-size: 40px;
+  }
+.rigth, .left {
+ width: 80vw; 
+ margin-top: 20px;
+}
+.bgu{
+width: 80vw;
+margin: auto;
+}
+.bgu:hover {
+  transform: scale(1)
+}
+.card2{
+  width: 80%;
+}
+.h3{
+  font-size: 16px;
+}
+.card2-2{
+  padding: 0 10px;
+}
+}
+
+@media all and (max-width: 500px) {
+  h1{
+    font-size: 25px;
+  }
+  .link{
+    font-size: 16px;
+  }
+  .inrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.pic{
+  height: 90%;
+}
+.picinpic{
+  width: 300px;
+}
+.h3{
+  font-size: 14px;
+}
 }
