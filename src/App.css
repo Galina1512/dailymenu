@@ -315,4 +315,31 @@ margin: auto;
 .h3{
   font-size: 14px;
 }
+.science{
+  width: 70%;
+}
+
+}
+@media all and (max-width: 400px) {
+  h1{
+    font-size: 22px;
+  }
+  .link{
+    font-size: 16px;
+    padding: 5px;
+  }
+  .newrecom {
+    width: 90px;
+    height: 120px;
+  }
+  .card2{
+    width: 90%;
+  }
+  .science{
+    width: 80%;
+  }
+  .btn{
+    margin: 10px;
+  }
+  
 }

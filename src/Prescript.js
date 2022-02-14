@@ -70,7 +70,7 @@ function Prescript(){
 <div className='card2'>
 <button onClick={previousPravilo}><img src = {iconfrom} width='20px' alt=''/></button>
 
-    <img src={pic} width='150px' height='200px' alt='tema'/>
+    <img src={pic} width='150px' height='200px' alt='tema' className='newrecom'/>
     <div className='card2-2'>
         <div className='card2-1'>
             <hr/>
@@ -98,7 +98,7 @@ function Prescript(){
         </div>
         <h3 className='h3'>{recom} </h3>
     </div>
-    <img src={fotki} width='150px' height='200px' alt='tema'/>
+    <img src={fotki} width='150px' height='200px' alt='tema'  className='newrecom'/>
 
     <button onClick={nexttPravilo}><img src = {iconto} width='20px' alt=''/></button>
 </div>
