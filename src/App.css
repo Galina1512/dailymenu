@@ -102,8 +102,13 @@ hr{
 .cont{
   display: flex;
  justify-content: space-evenly;
-
 }
+.cont1{
+  display: flex;
+ justify-content:center;
+ align-items: center;
+}
+
 .btn{
   padding: 10px;
   background: rgb(90, 219, 86);
@@ -168,6 +173,11 @@ h2 {
 }
 h3 {
   margin: 5px 0;
+}
+.h3{
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+
 }
 p{
   margin: 8px 0;
@@ -262,6 +272,14 @@ border: none;
   width: 60%;
   margin-top: 30px;
 }
+input{
+  width: 30px;
+  margin: 10px;
+  padding: 5px 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
 
 @media all and (max-width: 900px) {
   .bloki{
@@ -318,11 +336,16 @@ margin: auto;
 .science{
   width: 70%;
 }
+.cont1{
+margin: 0 10px;}
 
 }
 @media all and (max-width: 400px) {
   h1{
     font-size: 22px;
+  }
+  h2{
+    margin: 15px 0;
   }
   .link{
     font-size: 16px;
