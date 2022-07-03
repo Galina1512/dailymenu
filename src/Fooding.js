@@ -18,7 +18,7 @@ function Fooding({eat}) {
     const{id, name, image, recipe} = item;
     return(
         <div key={id} className='card1'>
-            <p className='span'> {name} </p>
+            <p className='spaning'> {name} </p>
             <img src={image} width='150px' alt=''/>
             <p>{showMore ? recipe : recipe.substring(0, 75) + "..." }
             <button onClick={()=>setShowMore(!showMore) } className="btn1"> {showMore ? "Показать меньше" :"Показать больше" } </button>
