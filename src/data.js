@@ -147,3 +147,4 @@ export const data = [
     supper: "Салат цезарь без сухариков (250 грамм)"
 }
 ]
+export default data;
