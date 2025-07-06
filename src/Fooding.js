@@ -1,5 +1,6 @@
 import { useState } from "react";
 import up from "./up.png";
+import Card from "./Card";
 
 const scrollToTop = () =>{
     window.scrollTo({
