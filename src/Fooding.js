@@ -11,8 +11,12 @@ const scrollToTop = () =>{
 function Fooding({eat}) {
     // const [showMore, setShowMore] = useState (false);
     const [showText, setShowText] = useState(false);
+    // const [isActive, setActive] = useState(false);
 
-    const showTextClick = (item) => {
+    const showTextClick = (item, id) => {
+        // if (item === item.id) {
+        // setActive(!isActive);
+        // };
         item.showMore = !item.showMore;
         setShowText(!showText);
 
@@ -20,12 +24,12 @@ function Fooding({eat}) {
 
     return(
         <div>
-
 <div className='display'>
 {eat.map((item => {
     const{id, name, image, recipe, showMore} = item;
     return(
-        <div key={id} className='card1'>
+        // <div key={id} className={isActive ? 'card11' : 'card1'} >
+        <div key={id} className='card1' >
             <p className='spaning'> {name} </p>
             <img src={image} width='150px' alt=''/>
             <p>{showMore ? recipe : recipe.substring(0, 75) + "..." }

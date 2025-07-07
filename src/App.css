@@ -76,8 +76,8 @@ nav{
   border:4px groove rgb(90, 219, 86);
   border-radius: 20px;
   padding: 15px;
-  width: 600px;
-  margin: 30px;
+  height: auto;
+  margin: 10px;
 }
 
 
